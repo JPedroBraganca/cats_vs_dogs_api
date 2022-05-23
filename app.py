@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI
 from components.neural_network import make_prediction
 from components.image_preprocessing import preprocess_image
 from pydantic import BaseModel
