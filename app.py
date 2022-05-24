@@ -16,9 +16,9 @@ def predict(image: Image):
     image = preprocess_image(image)
     return make_prediction(image)
    
-if __name__ == "__main__":
-    uvicorn.run(app, debug=True)
-    
+if __name__ == '__main__':
+    uvicorn.run(app, host='127.0.0.1', port=8000)
+
 
     
     
