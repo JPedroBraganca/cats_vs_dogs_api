@@ -5,7 +5,8 @@ uvicorn
 tensorflow-cpu
 tensorflow_hub
 pydantic
-opencv-python
+#opencv-python
+opencv-python-headless
 python-multipart
 gunicorn==19.9.0
 uvloop
