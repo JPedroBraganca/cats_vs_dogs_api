@@ -9,6 +9,10 @@ app = FastAPI()
 class Image(BaseModel):
     image: str
 
+@app.get('/')
+def index():
+    return {'message': 'Hello, World'}
+
 @app.post("/predict")
 def predict(image: Image):
     
