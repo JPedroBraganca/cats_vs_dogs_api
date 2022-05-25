@@ -6,7 +6,7 @@ class_names = ['CAT', 'DOG']
 
 def load_model():
 
-    path = "./models/cats_vs_dogs_transfer_learning.h5"
+    path = "./app/models/cats_vs_dogs_transfer_learning.h5"
     load = tf.keras.models.load_model(path, custom_objects={"KerasLayer": hub.KerasLayer})
     return load
 
