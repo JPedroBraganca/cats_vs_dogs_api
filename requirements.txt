@@ -8,6 +8,6 @@ pydantic
 #opencv-python
 opencv-python-headless
 python-multipart
-gunicorn==19.9.0
+gunicorn
 uvloop
 httptools
