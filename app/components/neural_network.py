@@ -23,7 +23,7 @@ def make_prediction(image):
     predicted_label = np.argmax(predicted)
 
     prob_cat = round(predicted[0], 2)
-    prob_dog = 1 - prob_cat
+    prob_dog = round(predicted[1], 2)
     pred_class = class_names[predicted_label]
     
     data = {"prob_cat": prob_cat,
